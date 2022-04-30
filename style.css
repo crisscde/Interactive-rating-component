@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+/* Block */
+body {
+  height: 100vh;
+  background: var(--veryDarkBlue);
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--darkBlue);
+  border-radius: 4%;
+  width: 18.5em;
+  height: 19rem;
+  padding: 2rem 1.5rem;
+}
+
+.rate { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Element */
+.card__star{
+  margin-left: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: hsla(217, 12%, 63%, .1);
+}
+
+
+.card__opinion {
+  font-weight: 700;
+  color: var(--White);
+  font-size: 24px;
+  margin-top: 3.5rem;
+}
+
+.card__description {
+  font-weight: 400;
+  color: var(--lightGrey);
+  font-size: 15px;
+  line-height: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.card__button {
+  margin-top: 1rem;
+  height: 3rem;
+  width: 18.5rem;
+  border-radius: 3rem;
+  color: var(--White);
+  background-color: var(--Orange);
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.card__button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  cursor: pointer;
+}
+
+.rate__button {
+  margin: 0rem .5rem 0rem .5rem;
+  height: 2.5rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background-color: hsla(217, 12%, 63%, .1);
+  color: var(--lightGrey);
+}
+
+.rate__button:focus{
+  outline-style: none;
+  background-color: var(--mediumGrey);
+  color: var(--White);
+}
+
+.rate__button:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.card__thanks {
+  display: flex;
+  justify-content: center;
+}
+
+.card__ranking {
+  color: rgba(245, 147, 77, 0.8);
+  background-color: hsla(217, 12%, 63%, .1);
+  width: 12rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  margin: 1rem 0rem 1.5rem 3rem;
+  letter-spacing: .05rem;
+}
+/* Modifier */
+.card__star--index {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+
+.card__opinion--two{
+  margin: 0;
+  text-align: center;
+}
+
+.card__description--two {
+  text-align: center;
+}
