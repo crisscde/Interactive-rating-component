@@ -5,7 +5,7 @@
   --White: hsl(0, 0%, 100%);
   --lightGrey: hsl(217, 12%, 63%);
   --mediumGrey: hsl(216, 12%, 54%);
-  --darkBlue: hsl(213, 19%, 18%);
+  --darkBlue: hsl(213, 20%, 18%);
   --veryDarkBlue: hsl(216, 12%, 8%);
 }
 
@@ -120,6 +120,19 @@ body {
   margin: 1rem 0rem 1.5rem 3rem;
   letter-spacing: .05rem;
 }
+
+.card__rankingText {
+  color: hsla(25, 97%, 53%, 0.8);
+  border-radius: 3rem;
+  background-color: hsla(217, 12%, 63%, .1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 12rem;
+  margin:1rem 3.3rem 1rem 3.3rem;
+}
+
 /* Modifier */
 .card__star--index {
   position: relative;
@@ -134,4 +147,37 @@ body {
 
 .card__description--two {
   text-align: center;
+}
+
+@media only screen and (min-width: 850px) {
+  .card{
+    width: 23rem;
+    height: 23rem;
+  }
+  .card__opinion {
+    font-size: 32px;
+  }
+  .rate__button {
+    margin: 0rem .5rem 0rem .5rem;
+    height: 3.5rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+  .card__button {
+    height: 4rem;
+    width: 23rem;
+  }
+  .card__description {
+    font-weight: 400;
+    color: var(--lightGrey);
+    font-size: 18px;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .card__rankingText {
+    color: hsla(25, 97%, 53%, 0.8);
+    height: 2rem;
+    width: 13rem;
+    margin:3rem 0rem 2rem 5rem;
+  }
 }
